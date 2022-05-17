@@ -82,10 +82,10 @@ buttons = [
     [
         InlineKeyboardButton(
             "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ✉️",
-            "https://t.me/naruto_robot_support"),
+            "https://t.me/https://t.me/NikaSupportChat"),
         InlineKeyboardButton(
-            "𝙽𝙴𝚃𝚆𝙾𝚁𝙺 📡",
-            "https://t.me/ignite_Xnetwork"),
+            "Chat Group 📡",
+            "https://t.me/animeuniversediscusion"),
 
         
     ]
@@ -95,8 +95,8 @@ buttons = [
 
 HELP_STRINGS = """
 Hey there!.
-My Name is {}, from Naruto. Take me as your group's  to have fun with me. \
-I can help you with the following commands.
+i am {},an anime themed bot And the captain of the straw hat pirates. i can help u By protecting this group properly. \
+click /help, to check my commands.
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -113,12 +113,9 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-ZEROTWO_IMG = "https://telegra.ph/file/cce63b5667d1028cd4fd9.jpg"
+ZEROTWO_IMG = "https://telegra.ph/file/c4ca7846e8803e274e697.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @X_Alonez \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at @PaimonXSupport."""
+DONATE_STRING = """Give Meat instead."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -225,10 +222,10 @@ def start(update: Update, context: CallbackContext):
                 \nI'm {context.bot.first_name}, made specifically to manage your group and have more fun than ever. \
                 \n────────────────── \
                 \n× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ* \
-                \n× *Naruto's wish is for your wish to come true.* \
+                \n× *Luffy's wish is for your wish to come true.* \
                 \n× *Hit /help to see my available commands.* \
                 \n────────────────── \
-                \n× *Pᴏᴡᴇʀᴇᴅ Bʏ: 亗𝙸𝙶𝙽𝙸𝚃𝙴!*
+                \n× *Pᴏᴡᴇʀᴇᴅ Bʏ: Liberation!*
                 ──────────────────"""),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(buttons)
@@ -244,7 +241,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="【Support】",
-                            url="https://t.me/naruto_robot_support",
+                            url="https://t.me/NikaSupportChat",
                         ),
 
                     ],
