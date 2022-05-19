@@ -242,20 +242,20 @@ def info(update: Update, context: CallbackContext):
 
     text = (
         f"╒═══「<b> Appraisal results:</b> 」\n"
-        f" ◐ 𝙸𝙳 | <code>{user.id}</code>\n"
-        f" ◐ 𝙵𝙸𝚁𝚂𝚃 𝙽𝙰𝙼𝙴 | {html.escape(user.first_name)}"
+        f" ⭒ ID: <code>{user.id}</code>\n"
+        f" ⭒ First Name: {html.escape(user.first_name)}"
     )
 
     if user.last_name:
-        text += f"\n◑ 𝙻𝙰𝚂𝚃 𝙽𝙰𝙼𝙴 | {html.escape(user.last_name)}"
+        text += f"\n⭒ Last Name: {html.escape(user.last_name)}"
 
     if user.username:
-        text += f"\n◐ 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 | @{html.escape(user.username)}"
+        text += f"\n⭒ Username: @{html.escape(user.username)}"
 
-    text += f"\n◑ 𝙿𝚁𝙾𝙵𝙸𝙻𝙴 𝙻𝙸𝙽𝙺 | {mention_html(user.id, '🖇️𝙷𝙴𝚁𝙴')}"
+    text += f"\n⭒ PermaLink: {mention_html(user.id, 'Here')}"
 
     if chat.type != "private" and user_id != bot.id:
-        _stext = "\n ◐ 𝙿𝙾𝚂𝙸𝚃𝙸𝙾𝙽 | <code>{}</code>"
+        _stext = "\n ◐ Position | <code>{}</code>"
 
         afk_st = is_afk(user.id)
         if afk_st:
@@ -263,12 +263,12 @@ def info(update: Update, context: CallbackContext):
         else:
             status = status = bot.get_chat_member(chat.id, user.id).status
             if status:
-                if status in {"𝙻𝙴𝙵𝚃", "𝙺𝙸𝙲𝙺𝙴𝙳"}:
+                if status in {"Left", "Kicked"}:
                     text += _stext.format("Not here")
-                elif status == "𝙼𝙴𝙼𝙱𝙴𝚁":
-                    text += _stext.format("𝙳𝙴𝚃𝙴𝙲𝚃𝙴𝙳")
-                elif status in {"𝙰𝙳𝙼𝙸𝙽𝙸𝚂𝚃𝚁𝙰𝚃𝙾𝚁", "𝙲𝚁𝙴𝙰𝚃𝙾𝚁"}:
-                    text += _stext.format("𝙰𝙳𝙼𝙸𝙽")
+                elif status == "Member":
+                    text += _stext.format("Detected")
+                elif status in {"Asministrator", "Creator"}:
+                    text += _stext.format("Admin")
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
         text += f"\n\n<b>Health:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
@@ -291,28 +291,28 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ Official Captain Of • Straw Hat Pirates 👥."
+        text += "\n\n Rankings:"
+        text += "\n\n• Captain of Straw Hat Pirates."
 
-        text += "\n\n• Titled As | Pirate King 🚩."
+        text += "\n\n• Titled As: Pirate King."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ Official Member Of  Straw Hat Pirates 👥."
+        text += "\n\n Rankings:"
+        text += "\n\n• Member of Straw Hat Pirates."
 
-        text += "\n\n• Titled As | The One Eyed Swords Man  🚩."
+        text += "\n\n• Titled As | The One Eyed Swords Man ."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ Official Member Of • Straw Hat Pirates 👥."
+        text += "\n\n Rankings:"
+        text += "\n\n• Member of Straw Hat Pirates."
 
-        text += "\n\n• Titled As | The Cook  🚩."
+        text += "\n\n• Titled As | The Cook  ."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ Official Member Of • Straw Hat Pirates 👥."
+        text += "\n\n Rankings:"
+        text += "\n\n• Member of Straw Hat Pirates."
 
-        text += "\n\n• Titled As | The Son Of The Sea 🚩."
+        text += "\n\n• Titled As | The Son Of The Sea ."
         disaster_level_present = True
 
     elif user.id in TIGERS:
@@ -324,8 +324,8 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
     
     elif user.id in MEMBERS:
-        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ Official Member Of The Straw Hat Pirates 👥."
+        text += "\n\n Rankings:"
+        text += "\n\n• Member of Straw Hat Pirates."
         disaster_level_present = True
         
 
@@ -369,10 +369,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "𝙷𝙴𝙰𝙻𝚃𝙷", url="https://t.me/NIkaUpdates/3"
+                                "Health", url="https://t.me/NIkaUpdates/5"
                             ),
                             InlineKeyboardButton(
-                                "𝙳𝙸𝚂𝙰𝚂𝚃𝙴𝚁𝚂", url="https://t.me/NIkaUpdates/4"
+                                "Disasters", url="https://t.me/NIkaUpdates/4"
                             ),
                         ],
                     ]
