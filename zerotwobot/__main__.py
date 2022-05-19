@@ -94,18 +94,18 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hey there!.
-i am {},an anime themed bot And the captain of the straw hat pirates. i can help u By protecting this group properly. \
-click /help, to check my commands.
-
-*Main* commands available:
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
-
-
+Hello there!.
+{} here. \
+━━━━━━━━━━━━━━━━━━━━━━━━
+𝒞𝒶𝓅𝓉𝒶𝒾𝓃 𝒪𝒻 𝒯𝒽𝑒 𝒮𝓉𝓇𝒶𝓌 𝐻𝒶𝓉 𝒫𝒾𝓇𝒶𝓉𝑒𝓈
+━━━━━━━━━━━━━━━━━━━━━━━━
+Main Commabds: 
+⭒ /start: To Check If I'm Working Or Not.
+⭒ /help: To Check What Im Capable Of
+━━━━━━━━━━━━━━━━━━━━━━━━ 
+𝘈𝘯 𝘈𝘯𝘪𝘮𝘦 𝘛𝘩𝘦𝘮𝘦𝘥 𝘚𝘶𝘱𝘦𝘳𝘣𝘰𝘵.  
+━━━━━━━━━━━━━━━━━━━━━━━━ 
+Any Issues? Report at @nikasupportchat
 {}
 And the following:
 """.format(
@@ -218,15 +218,15 @@ def start(update: Update, context: CallbackContext):
             update.effective_message.reply_photo(
                 ZEROTWO_IMG,
                 caption=escape_markdown(f"""                
-               Hey There {first_name}. \
-                \nI'm {context.bot.first_name}, made specifically to manage your group and have more fun than ever. \
-                \n────────────────── \
-                \n× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ* \
-                \n× *Luffy's wish is for your wish to come true.* \
-                \n× *Hit /help to see my available commands.* \
-                \n────────────────── \
-                \n× *Pᴏᴡᴇʀᴇᴅ Bʏ: Liberation!*
-                ──────────────────"""),
+               Well Hello There {first_name}. \
+                \n I'm {context.bot.first_name}, . \
+                \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ \
+                \n 𝐹𝓊𝓉𝓊𝓇𝑒 𝒫𝒾𝓇𝒶𝓉𝑒 𝒦𝒾𝓃𝑔 𝒜𝓉 𝒴𝑜𝓊𝓇 𝒮𝑒𝓇𝓋𝒾𝒸𝑒 \
+                \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ \
+                \n Click /help To Check My Capabilities As The Future Pirate King \
+                \n "𝙺𝚊𝚒𝚣𝚘𝚔𝚞 𝚘𝚞 𝚗𝚒, 𝚘𝚛𝚎 𝚠𝚊 𝚗𝚊𝚛𝚞" \
+                \n ━━━━━━━━━━━━━━━━━━━━━━━━
+                """),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
@@ -620,7 +620,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@naruto_robot_support", "👋 Yo, i'm alive.")
+            dispatcher.bot.sendMessage(f"@NikaSupportChat", "👋 Yo, i'm alive.")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isn't able to send message to support_chat, go and check!",
