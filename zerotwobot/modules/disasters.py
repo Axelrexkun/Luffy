@@ -683,7 +683,7 @@ Group admins/group owners do not need these commands.
  ╠ `/members`*:* Lists all Ignite disasters
  ╠ `/tigers`*:* Lists all Tigers disasters
  ╠ `/wolves`*:* Lists all Wolf disasters
- ╠ `/heroes`*:* Lists all Zero Two Association members
+ ╠ `/heroes`*:* Lists all Straw Hat members
  ╠ `/adddragon`*:* Adds a user to Dragon
  ╠ `/adddemon`*:* Adds a user to Demon
  ╠ `/addtiger`*:* Adds a user to Tiger
@@ -762,7 +762,7 @@ Group admins/group owners do not need these commands.
  ╠ `/ungban`*:* Ungbans the user, same usage as gban
  ╚ `/gbanlist`*:* Outputs a list of gbanned users
 
-Visit @blackbulls\_support for more information.
+Visit @NikaSupportChat for more information.
 """
 
 SUDO_HANDLER = CommandHandler(("addsudo", "adddragon"), addsudo, run_async=True)
