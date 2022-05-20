@@ -242,17 +242,17 @@ def info(update: Update, context: CallbackContext):
 
     text = (
         f"╒═══「<b> Appraisal results:</b> 」\n"
-        f" ⭒ ID: <code>{user.id}</code>\n"
-        f" ⭒ First Name: {html.escape(user.first_name)}"
+        f"  ID: <code>{user.id}</code>\n"
+        f"  First Name: {html.escape(user.first_name)}"
     )
 
     if user.last_name:
-        text += f"\n⭒ Last Name: {html.escape(user.last_name)}"
+        text += f"\n Last Name: {html.escape(user.last_name)}"
 
     if user.username:
-        text += f"\n⭒ Username: @{html.escape(user.username)}"
+        text += f"\n Username: @{html.escape(user.username)}"
 
-    text += f"\n⭒ PermaLink: {mention_html(user.id, 'Here')}"
+    text += f"\n PermaLink: {mention_html(user.id, 'Here')}"
 
     if chat.type != "private" and user_id != bot.id:
         _stext = "\n ◐ Position | <code>{}</code>"
@@ -272,7 +272,7 @@ def info(update: Update, context: CallbackContext):
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
         text += f"\n\n<b>Health:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
-        text += ' [<a href="https://t.me/NIkaUpdates/3">‼️</a>]'.format(
+        text += ' [<a href="https://t.me/NIkaUpdates/5">?</a>]'.format(
             bot.username,
 
          ) 
@@ -330,7 +330,7 @@ def info(update: Update, context: CallbackContext):
         
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/NIkaUpdates/4">‼️</a>]'.format(
+        text += ' [<a href="https://t.me/NIkaUpdates/4">?</a>]'.format(
             bot.username,
 
         )
@@ -421,7 +421,7 @@ def about_me(update: Update, context: CallbackContext):
             f"{username} hasn't set an info message about themselves yet!",
         )
     else:
-        update.effective_message.reply_text("There isnt one, use /setme to set one.")
+        update.effective_message.reply_text("There Isnt One, Yo Mom Will Come And Set One?.")
 
 
 
@@ -516,7 +516,7 @@ def set_about_bio(update: Update, context: CallbackContext):
 
         if user_id == bot.id and sender_id not in DEV_USERS:
             message.reply_text(
-                "Erm... yeah, I only trust Zero Two Association to set my bio.",
+                "Erm... yeah, I only trust Straw Hat Pirates to set my bio.",
             )
             return
 
