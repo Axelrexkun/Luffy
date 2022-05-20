@@ -75,13 +75,13 @@ def get_readable_time(seconds: int) -> str:
 buttons = [
     [
         InlineKeyboardButton(
-            text="𝙰𝙳𝙳 𝙼𝙴 💬",
+            text="Add Me",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=True",
         ),
     ],
     [
         InlineKeyboardButton(
-            "𝚂𝚄𝙿𝙿𝙾𝚁𝚃",
+            "Support",
             "https://t.me/NikaSupportChat"),
         InlineKeyboardButton(
             "Chat Group",
@@ -620,7 +620,8 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@NikaSupportChat", "Back Alive.")
+            dispatcher.bot.sendMessage(f"@NikaSupportChat", "Daddy Is Back Alive!").
+                                       
         except Unauthorized:
             LOGGER.warning(
                 "Bot isn't able to send message to support_chat, go and check!",
