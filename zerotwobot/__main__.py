@@ -81,10 +81,10 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ✉️",
-            "https://t.me/https://t.me/NikaSupportChat"),
+            "𝚂𝚄𝙿𝙿𝙾𝚁𝚃",
+            "https://t.me/NikaSupportChat"),
         InlineKeyboardButton(
-            "Chat Group 📡",
+            "Chat Group",
             "https://t.me/animeuniversediscusion"),
 
         
@@ -99,7 +99,7 @@ Hello there!.
 ━━━━━━━━━━━━━━━━━━━━━━━━
 𝒞𝒶𝓅𝓉𝒶𝒾𝓃 𝒪𝒻 𝒯𝒽𝑒 𝒮𝓉𝓇𝒶𝓌 𝐻𝒶𝓉 𝒫𝒾𝓇𝒶𝓉𝑒𝓈
 ━━━━━━━━━━━━━━━━━━━━━━━━
-Main Commabds: 
+Main Commands: 
 ⭒ /start: To Check If I'm Working Or Not.
 ⭒ /help: To Check What Im Capable Of
 ━━━━━━━━━━━━━━━━━━━━━━━━ 
@@ -113,7 +113,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-ZEROTWO_IMG = "https://telegra.ph/file/c4ca7846e8803e274e697.jpg"
+ZEROTWO_IMG = "https://telegra.ph/file/a04e61cbf17a9b7495996.jpg"
 
 DONATE_STRING = """Give Meat instead."""
 
@@ -218,10 +218,10 @@ def start(update: Update, context: CallbackContext):
             update.effective_message.reply_photo(
                 ZEROTWO_IMG,
                 caption=escape_markdown(f"""                
-               Well Hello There {first_name}. \
-                \n I'm {context.bot.first_name}, . \
+                 Well Hello There {first_name}. \
+                \n I'm {context.bot.first_name} . \
                 \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ \
-                \n 𝐹𝓊𝓉𝓊𝓇𝑒 𝒫𝒾𝓇𝒶𝓉𝑒 𝒦𝒾𝓃𝑔 𝒜𝓉 𝒴𝑜𝓊𝓇 𝒮𝑒𝓇𝓋𝒾𝒸𝑒 \
+                \n Fᴜᴛᴜʀᴇ Pɪʀᴀᴛᴇ Kɪɴɢ Aᴛ Yᴏᴜʀ Sᴇʀᴠɪᴄᴇ \
                 \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ \
                 \n Click /help To Check My Capabilities As The Future Pirate King \
                 \n "𝙺𝚊𝚒𝚣𝚘𝚔𝚞 𝚘𝚞 𝚗𝚒, 𝚘𝚛𝚎 𝚠𝚊 𝚗𝚊𝚛𝚞" \
@@ -620,7 +620,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@NikaSupportChat", "👋 Yo, i'm alive.")
+            dispatcher.bot.sendMessage(f"@NikaSupportChat", "Back Alive.")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isn't able to send message to support_chat, go and check!",
