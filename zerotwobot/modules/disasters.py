@@ -680,7 +680,7 @@ Group admins/group owners do not need these commands.
  ╔ *List all special users:*
  ╠ `/dragons`*:* Lists all Dragon disasters
  ╠ `/demons`*:* Lists all Demon disasters
- ╠ `/members`*:* Lists all Ignite disasters
+ ╠ `/members`*:* Lists all StrawHat disasters
  ╠ `/tigers`*:* Lists all Tigers disasters
  ╠ `/wolves`*:* Lists all Wolf disasters
  ╠ `/heroes`*:* Lists all Straw Hat members
