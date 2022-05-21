@@ -561,7 +561,7 @@ def removemember(update: Update, context: CallbackContext) -> str:
 def whitelistlist(update: Update, context: CallbackContext):
     reply = "<b>Known Wolf Disasters 🐺:</b>\n"
     m = update.effective_message.reply_text(
-        "<code>Gathering intel from 亗ᏆᏀΝᏆͲᎬ..</code>", parse_mode=ParseMode.HTML,
+        "<code>Gathering intel from The Straw Hat Crew..</code>", parse_mode=ParseMode.HTML,
     )
     bot = context.bot
     for each_user in WOLVES:
@@ -580,7 +580,7 @@ def whitelistlist(update: Update, context: CallbackContext):
 def tigerlist(update: Update, context: CallbackContext):
     reply = "<b>Known Tiger Disasters 🐯:</b>\n"
     m = update.effective_message.reply_text(
-        "<code>Gathering intel from 亗ᏆᏀΝᏆͲᎬ..</code>", parse_mode=ParseMode.HTML,
+        "<code>Gathering intel from The Straw Hat Crew..</code>", parse_mode=ParseMode.HTML,
     )
     bot = context.bot
     for each_user in TIGERS:
@@ -598,7 +598,7 @@ def tigerlist(update: Update, context: CallbackContext):
 def supportlist(update: Update, context: CallbackContext):
     bot = context.bot
     m = update.effective_message.reply_text(
-        "<code>Gathering intel from 亗ᏆᏀΝᏆͲᎬ..</code>", parse_mode=ParseMode.HTML,
+        "<code>Gathering intel from The Straw Hat Crew..</code>", parse_mode=ParseMode.HTML,
     )
     reply = "<b>Known Demon Disasters 👹:</b>\n"
     for each_user in DEMONS:
@@ -616,7 +616,7 @@ def supportlist(update: Update, context: CallbackContext):
 def sudolist(update: Update, context: CallbackContext):
     bot = context.bot
     m = update.effective_message.reply_text(
-        "<code>Gathering intel from 亗ᏆᏀΝᏆͲᎬ..</code>", parse_mode=ParseMode.HTML,
+        "<code>Gathering intel from The Straw Hat Crew..</code>", parse_mode=ParseMode.HTML,
     )
     true_sudo = list(set(DRAGONS) - set(DEV_USERS))
     reply = "<b>Known Dragon Disasters 🐉:</b>\n"
@@ -637,10 +637,10 @@ def sudolist(update: Update, context: CallbackContext):
 def devlist(update: Update, context: CallbackContext):
     bot = context.bot
     m = update.effective_message.reply_text(
-        "<code>Gathering intel from 亗ᏆᏀΝᏆͲᎬ..</code>", parse_mode=ParseMode.HTML,
+        "<code>Gathering intel from The Straw Hat Crew..</code>", parse_mode=ParseMode.HTML,
     )
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Naruto Dev Members ⚡️:</b>\n"
+    reply = "<b>Luffy Dev Members :</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
@@ -658,7 +658,7 @@ def devlist(update: Update, context: CallbackContext):
 def memberlist(update: Update, context: CallbackContext):
     reply = "<b>Known Members :</b>\n"
     m = update.effective_message.reply_text(
-        "<code>Gathering intel from 亗ᏆᏀΝᏆͲᎬ..</code>", parse_mode=ParseMode.HTML,
+        "<code>Gathering intel from The Straw Hat Crew..</code>", parse_mode=ParseMode.HTML,
     )
     bot = context.bot
     for each_user in MEMBERS:
