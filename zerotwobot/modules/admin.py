@@ -174,7 +174,7 @@ def demote(update: Update, context: CallbackContext) -> str:
         return
 
     if user_member.status == "creator":
-        message.reply_text("This person CREATED the chat, how would I demote them?")
+        message.reply_text("This person is the King Here, how would I demote them?")
         return
 
     if not user_member.status == "administrator":
@@ -465,7 +465,7 @@ def unpinall(update: Update, context: CallbackContext) -> str:
             not admin_member.status == "creator"
             and user.id not in DRAGONS
         ):
-            message.reply_text("Only chat OWNER can unpin all messages.")
+            message.reply_text("Only The Ruler can unpin all messages.")
             return
 
 
