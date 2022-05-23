@@ -224,7 +224,7 @@ def start(update: Update, context: CallbackContext):
                 \n Fᴜᴛᴜʀᴇ Pɪʀᴀᴛᴇ Kɪɴɢ Aᴛ Yᴏᴜʀ Sᴇʀᴠɪᴄᴇ \
                 \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ \
                 \n Click /help To Check My Capabilities As The Future Pirate King \
-                \n "𝙺𝚊𝚒𝚣𝚘𝚔𝚞 𝚘𝚞 𝚗𝚒, 𝚘𝚛𝚎 𝚠𝚊 𝚗𝚊𝚛𝚞" \
+                \n    "𝙺𝚊𝚒𝚣𝚘𝚔𝚞 𝚘𝚞 𝚗𝚒, 𝚘𝚛𝚎 𝚠𝚊 𝚗𝚊𝚛𝚞" \
                 \n ━━━━━━━━━━━━━━━━━━━━━━━━
                 """),
                 parse_mode=ParseMode.MARKDOWN,
@@ -572,7 +572,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True,
         )
 
-        if OWNER_ID != 1638803785 and DONATION_LINK:
+        if OWNER_ID != 1902388715 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
