@@ -78,12 +78,12 @@ def no_longer_afk(update: Update, context: CallbackContext):
                 "{} is awake!",
                 "{} is back online!",
                 "{} is finally here!",
-                "Welcome back! {}",
-                "We missed you {}",
+                "Why Would You Come Back! {}",
+                "We Didnt Missed you {}",
             ]
             chosen_option = random.choice(options)
             update.effective_message.reply_text(
-                chosen_option.format(firstname) + f"\nYou were AFK for: <code>{time}</code>",
+                chosen_option.format(firstname) + f"\nYou were Afk for: <code>{time}</code>",
                 parse_mode="html"
             )
         except:
