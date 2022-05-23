@@ -85,7 +85,7 @@ def ban(update: Update, context: CallbackContext) -> str:
         and user.id not in DRAGONS
     ):
         update.effective_message.reply_text(
-            "Sorry son, but you're not worthy to wield the banhammer.",
+            "Sorry son, but you're not worthy to wield the The God Ussop's 100 Tons Ban Hammer.",
         )
         return log_message
 
@@ -110,20 +110,20 @@ def ban(update: Update, context: CallbackContext) -> str:
     
         if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
             if user_id == OWNER_ID:
-                message.reply_text("Trying to put me against a God level disaster huh?")
+                message.reply_text("Trying to put me against The Pirate King huh?")
             elif user_id in DEV_USERS:
-                message.reply_text("I can't act against our own.")
+                message.reply_text("I can't act against our own Crew Member.")
             elif user_id in DRAGONS:
                 message.reply_text(
-                    "Fighting this Dragon here will put me and my people's at risk.",
+                    "Fighting the Cook here will put me and my people's at risk.",
                 )
             elif user_id in DEMONS:
                 message.reply_text(
-                    "Bring an order from Black Bulls to fight a Demon disaster.",
+                    "Bring an order From Straw Hat Crew to fight The King Of Seas.",
                 )
             elif user_id in TIGERS:
                 message.reply_text(
-                    "Bring an order from Black Bulls to fight a Tiger disaster.",
+                    "Bring an order from Straw Hat Crew to fight a Tiger disaster.",
                 )
             elif user_id in WOLVES:
                 message.reply_text("Wolf abilities make them ban immune!")
@@ -227,7 +227,7 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
         message.reply_text("I can't seem to find this user.")
         return log_message
     if user_id == bot.id:
-        message.reply_text("I'm not gonna BAN myself, are you crazy?")
+        message.reply_text("I'm not gonna BAN myself Nigga, are you crazy?")
         return log_message
 
     if is_user_ban_protected(chat, user_id, member):
