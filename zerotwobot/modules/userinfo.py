@@ -238,7 +238,7 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>Gathering info from Liberation...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>Gathering info from The Crew...</code>", parse_mode=ParseMode.HTML)
 
     text = (
         f"╒═══「<b> Appraisal results:</b> 」\n"
@@ -247,12 +247,12 @@ def info(update: Update, context: CallbackContext):
     )
 
     if user.last_name:
-        text += f"\n Last Name: {html.escape(user.last_name)}"
+        text += f"\n  Last Name: {html.escape(user.last_name)}"
 
     if user.username:
-        text += f"\n Username: @{html.escape(user.username)}"
+        text += f"\n  Username: @{html.escape(user.username)}"
 
-    text += f"\n PermaLink: {mention_html(user.id, 'Here')}"
+    text += f"\n  PermaLink: {mention_html(user.id, 'Here')}"
 
     if chat.type != "private" and user_id != bot.id:
         _stext = "\n ◐ Position | <code>{}</code>"
