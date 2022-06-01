@@ -199,19 +199,19 @@ def new_member(update: Update, context: CallbackContext):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Oh, Darling I have searched for you everywhere", reply_to_message_id=reply,
+                    "Everyone Bow Down, The Allmighty Pirate King Just Joined!", reply_to_message_id=reply,
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
                     f"#USER_JOINED\n"
-                    f"Bot Owner just joined the group"
+                    f"Pirate King Just Joined"
                 )
                 continue
 
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Be cool! A member of the Zero Two Association just joined.",
+                    "Be Quiet Everyone, The One Eyed Swordsman is here.",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
@@ -224,7 +224,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
                 update.effective_message.reply_text(
-                    "Whoa! A Dragon disaster just joined! Stay Alert!",
+                    "Whoa! The Cook just joined! Stay Alert!",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
@@ -237,7 +237,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Support
             elif new_mem.id in DEMONS:
                 update.effective_message.reply_text(
-                    "Huh! Someone with a Demon disaster level just joined!",
+                    "No Way The King Of Seas just Joined this chat",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
@@ -571,14 +571,14 @@ def left_member(update: Update, context: CallbackContext):
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Oi! Genos! He left..", reply_to_message_id=reply,
+                    "Thankfully he went away without destroying anything this time..", reply_to_message_id=reply,
                 )
                 return
 
             # Give the devs a special goodbye
             elif left_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "See you later at the Zero Two's Association!",
+                    "See Ya Later At The Ship!",
                     reply_to_message_id=reply,
                 )
                 return
