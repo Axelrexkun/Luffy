@@ -85,7 +85,7 @@ def ban(update: Update, context: CallbackContext) -> str:
         and user.id not in DRAGONS
     ):
         update.effective_message.reply_text(
-            "Sorry son, but you're not worthy to wield the The God Ussop's 100 Tons Ban Hammer.",
+            "Sorry son, but you're not worthy to wield the God Ussop's 100 Tons Ban Hammer.",
         )
         return log_message
 
@@ -516,7 +516,7 @@ def bans_callback(update: Update, context: CallbackContext):
         
         if not (member.can_restrict_members or member.status == "creator") and (admin_user.id not in DRAGONS):
             query.answer(
-                "Sorry son, but you're not worthy to wield the banhammer.", show_alert=True,
+                "Sorry son, but you're not worthy to wield the god ussop's 100 tons banhammer.", show_alert=True,
             )
             return log_message
 
@@ -546,20 +546,20 @@ def bans_callback(update: Update, context: CallbackContext):
         
             if is_user_ban_protected(chat, user_id, member) and admin_user not in DEV_USERS:
                 if user_id == OWNER_ID:
-                    message.edit_text("Trying to put me against a God level disaster huh?")
+                    message.edit_text("Trying to put me against the pirate king huh?")
                 elif user_id in DEV_USERS:
                     message.edit_text("I can't act against our own.")
                 elif user_id in DRAGONS:
                     message.edit_text(
-                        "Fighting this Dragon here will put me and my people's at risk.",
+                        "Fighting the cook here will put me and my people's at risk.",
                     )
                 elif user_id in DEMONS:
                     message.edit_text(
-                        "Bring an order from Black Bulls to fight a Demon disaster.",
+                        "Bring an order from the straw hat crew to fight the king of seas.",
                     )
                 elif user_id in TIGERS:
                     message.edit_text(
-                        "Bring an order from Black Bulls to fight a Tiger disaster.",
+                        "Bring an order from straw hat crew to fight a Tiger disaster.",
                     )
                 elif user_id in WOLVES:
                     message.edit_text("Wolf abilities make them ban immune!")
