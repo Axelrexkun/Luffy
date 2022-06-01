@@ -67,12 +67,12 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         return ""
 
     if user_id in DEMONS:
-        rt += "Requested God to promote a Demon Disaster to Dragon."
+        rt += "Requested captain to promote a Demon Disaster to Dragon."
         data["supports"].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Requested God to promote a Wolf Disaster to Dragon."
+        rt += "Requested captain to promote a Wolf Disaster to Dragon."
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -125,7 +125,7 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Requested God to demote this Dragon to Demon"
+        rt += "Requested captain to demote this Dragon to Demon"
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
 
@@ -134,7 +134,7 @@ def addsupport(
         return ""
 
     if user_id in WOLVES:
-        rt += "Requested God to promote this Wolf Disaster to Demon"
+        rt += "Requested captain to promote this Wolf Disaster to Demon"
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -406,7 +406,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DEMONS:
-        message.reply_text("Requested HA to demote this user to Civilian")
+        message.reply_text("Requested Captain to demote this user to Civilian")
         DEMONS.remove(user_id)
         data["supports"].remove(user_id)
 
