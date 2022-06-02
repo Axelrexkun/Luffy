@@ -620,7 +620,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@NikaSupportChat", "𝙸 𝙰𝙸𝙽𝚃 𝙾𝚄𝚃 𝙾𝙵 𝙷𝙰𝙺𝙸 𝚈𝙴𝚃, 𝙶𝙴𝙰𝚁 𝙵𝙸𝙵𝚃𝙷!.")
+            dispatcher.bot.sendMessage(f"@NikaSupportChat", "ɪ ᴀɪɴ'ᴛ ᴏᴜᴛ ᴏғ ʜᴀᴋɪ ʏᴇᴛ!.")
                                        
         except Unauthorized:
             LOGGER.warning(
