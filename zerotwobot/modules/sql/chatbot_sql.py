@@ -24,7 +24,7 @@ SOFTWARE.
 import threading
 
 from sqlalchemy import Column, String
-from NekoRobot.modules.sql import BASE, SESSION
+from zerotwobot.modules.sql import BASE, SESSION
 
 class KukiChats(BASE):
     __tablename__ = "kuki_chats"
