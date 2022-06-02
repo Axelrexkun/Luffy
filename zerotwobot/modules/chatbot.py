@@ -15,10 +15,10 @@ from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
-from NekoRobot.modules.helper_funcs.filters import CustomFilters
-from NekoRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from NekoRobot import dispatcher, updater, SUPPORT_CHAT
-from NekoRobot.modules.log_channel import gloggable
+from zerotwobot.modules.helper_funcs.filters import CustomFilters
+from zerotwobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from zerotwobot import dispatcher, updater, SUPPORT_CHAT
+from zerotwobot.modules.log_channel import gloggable
 
 @run_async
 @user_admin_no_reply
