@@ -3,7 +3,7 @@ import re
 import os
 import html
 import requests
-import NekoRobot.modules.sql.chatbot_sql as sql
+import zerotwobot.modules.sql.chatbot_sql as sql
 
 from time import sleep
 from telegram import ParseMode
