@@ -436,7 +436,7 @@ EIGHTBALL = [
     "🟢 You may rely on it.",
 ]
 
-DECIDE = ("Yes.", "No.", "Not A Future Pirate King Deciding Stuff For Someone Who Gets No Bitches, anyways take this as a maybe.")
+DECIDE = ("Yes.", "No.", "Not A Future Pirate King Deciding Stuff For Someone Who Gets No Bitches anyways take this as a maybe.")
 
 TABLE = (
     "(╯°□°）╯彡 ┻━┻",
