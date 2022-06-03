@@ -5,13 +5,13 @@ RUN_STRINGS = (
     "Look out for the wall!",
     "Don't leave me alone with them!!",
     "You've got company!",
-    "Chotto matte!",
+    "Nigerundayo!",
     "Yare yare daze",
     "*Naruto run activated*",
     "*Nezuko run activated*",
     "Hey take responsibilty for what you just did!",
     "May the odds be ever in your favour.",
-    "Run everyone, they just dropped a bomb 💣💣",
+    "Ussop Special: RUN!",
     "And they disappeared forever, never to be seen again.",
     "Legend has it, they're still running.",
     "Hasta la vista, baby.",
@@ -26,14 +26,14 @@ GIFS = [
 ]
 
 SLAP_ZEROTWO_TEMPLATES = (
-    "Slap me one more time and I'll mute you.",
+    "Slap me one more time and I'll Throw a Ussop Special at u.",
     "Stop slapping me. REEEEEEEEEEEEEE.",
     [
         "I am muting you for a minute.",  # normal reply
         "Stop slapping me just because I can't mute you. REEEEEEEEEE.",  # reply to admin
         "tmute",  # command
-        "Shut up!",
-        "Silence!",
+        "i've had enough, nigger!",
+        "Silence, bitch!",
     ],
 )
 
@@ -64,14 +64,14 @@ SLAP_TEMPLATES = (
     "{user1} sent {user2} down the memory hole.",
     "{user2} was a mistake. - '{user1}' ",
     "{user2} was made redundant.",
-    "{user1} {hits} {user2} with a bat!.",
-    "{user1} {hits} {user2} with a Taijutsu Kick!.",
-    "{user1} {hits} {user2} with X-Gloves!.",
+    "{user1} {hits} {user2} with a Leo Bazooka!.",
+    "{user1} {hits} {user2} with a Bajrang Gun!.",
+    "{user1} {hits} {user2} with a Red Hawk!.",
     "{user1} {hits} {user2} with a Jet kick!.",
     "{user1} {hits} {user2} with a Jet Pistol!.",
-    "{user1} {hits} {user2} with a United States of Smash!.",
+    "{user1} {hits} {user2} with a Kong Gun!.",
     "{user1} {hits} {user2} with a Detroit Smash!.",
-    "{user1} {hits} {user2} with a Texas Smash!.",
+    "{user1} {hits} {user2} with a jet culverin!.",
     "{user1} {hits} {user2} with a California Smash!.",
     "{user1} {hits} {user2} with a New Hampshire Smash!.",
     "{user1} {hits} {user2} with a Missouri Smash!.",
@@ -121,7 +121,7 @@ SLAP_TEMPLATES = (
     "{user2} was turned into a Jojo reference!",
     "{user1} hits {user2} with {item}.",
     "Round 2!..Ready? .. FIGHT!!",
-    "WhoPixel will oof {user2} to infinity and beyond.",
+    "Ussop Bonks {user2} With An 100 Tons Ussop Hammer.",
     "{user2} ate a bat and discovered a new disease.",
     "{user1} folded {user2} into a paper plane",
     "{user1} served {user2} some bat soup.",
@@ -139,7 +139,7 @@ SLAP_TEMPLATES = (
     "{user2} lost their race piece!",  # No game no life reference
     "Shut up {user2}, you are just {user2}.",  # No game no life reference
     "{user1} hits {user2} with Aka si anse!",  # No game no life reference
-    "@NeoTheKitty scratches {user2}",  # Pixels pet cat - @NeoTheKitty
+    "@yuitosan bullies {user2}", 
     "Majin buu ate {user2}",  # Dbz
     "Goblin slayer slays {user2}",  # Goblin Slayer
 )
@@ -211,15 +211,15 @@ ITEMS = (
     "heavy rock",
     "chunk of dirt",
     "ton of bricks",
-    "rasengan",
+    "onigiri",
     "spirit bomb",
     "100-Type Guanyin Bodhisattva",
-    "rasenshuriken",
+    "hammer",
     "Murasame",
     "ban",
     "chunchunmaru",
     "Kubikiribōchō",
-    "rasengan",
+    "Con*om",
     "spherical flying kat",
 )
 
@@ -436,7 +436,7 @@ EIGHTBALL = [
     "🟢 You may rely on it.",
 ]
 
-DECIDE = ("Yes.", "No.", "Maybe.")
+DECIDE = ("Yes.", "No.", "Not A Future Pirate King Deciding Stuff For Someone Who Gets No Bitches, anyways take this as a maybe.")
 
 TABLE = (
     "(╯°□°）╯彡 ┻━┻",
