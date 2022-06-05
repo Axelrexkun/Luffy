@@ -299,13 +299,13 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nThe Disaster level of this person is 'Cook'."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe Disaster level of this person is 'King of Seas'."
+        text += "\n\nThe Disaster level of this person is 'Navigator'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThe Disaster level of this person is 'Tiger'."
+        text += "\n\nThe Disaster level of this person is 'Sniper'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThe Disaster level of this person is 'Wolf'."
+        text += "\n\nThe Disaster level of this person is 'musician'."
         disaster_level_present = True
 
     if disaster_level_present:
