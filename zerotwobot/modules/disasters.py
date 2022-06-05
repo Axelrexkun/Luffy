@@ -578,7 +578,7 @@ def whitelistlist(update: Update, context: CallbackContext):
 
 @whitelist_plus
 def tigerlist(update: Update, context: CallbackContext):
-    reply = "<b>Known Snipers 🐯:</b>\n"
+    reply = "<b>Known Snipers:</b>\n"
     m = update.effective_message.reply_text(
         "<code>Gathering intel from The Straw Hat Crew..</code>", parse_mode=ParseMode.HTML,
     )
@@ -600,7 +600,7 @@ def supportlist(update: Update, context: CallbackContext):
     m = update.effective_message.reply_text(
         "<code>Gathering intel from The Straw Hat Crew..</code>", parse_mode=ParseMode.HTML,
     )
-    reply = "<b>Known Navigators 👹:</b>\n"
+    reply = "<b>Known Navigators:</b>\n"
     for each_user in DEMONS:
         user_id = int(each_user)
         try:
@@ -619,7 +619,7 @@ def sudolist(update: Update, context: CallbackContext):
         "<code>Gathering intel from The Straw Hat Crew..</code>", parse_mode=ParseMode.HTML,
     )
     true_sudo = list(set(DRAGONS) - set(DEV_USERS))
-    reply = "<b>Known Cooks 🐉:</b>\n"
+    reply = "<b>Known Cooks:</b>\n"
     for each_user in true_sudo:
         user_id = int(each_user)
         try:
@@ -640,7 +640,7 @@ def devlist(update: Update, context: CallbackContext):
         "<code>Gathering intel from The Straw Hat Crew..</code>", parse_mode=ParseMode.HTML,
     )
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Known Swordmans 🐉:</b>\n"
+    reply = "<b>Known Swordmans:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
@@ -678,16 +678,16 @@ Commands listed here only work for users with special access and are mainly used
 Group admins/group owners do not need these commands.
 
  ╔ *List all special users:*
- ╠ `/dragons`*:* Lists all Dragon disasters
- ╠ `/demons`*:* Lists all Demon disasters
+ ╠ `/cooks`*:* Lists all Dragon disasters
+ ╠ `/navigators`*:* Lists all Demon disasters
  ╠ `/members`*:* Lists all StrawHat disasters
- ╠ `/tigers`*:* Lists all Tigers disasters
- ╠ `/wolves`*:* Lists all Wolf disasters
- ╠ `/heroes`*:* Lists all Straw Hat members
- ╠ `/adddragon`*:* Adds a user to Dragon
- ╠ `/adddemon`*:* Adds a user to Demon
- ╠ `/addtiger`*:* Adds a user to Tiger
- ╠ `/addwolf`*:* Adds a user to Wolf
+ ╠ `/snipers`*:* Lists all Tigers disasters
+ ╠ `/musicians`*:* Lists all Wolf disasters
+ ╠ `/pirates`*:* Lists all Straw Hat members
+ ╠ `/addcook`*:* Adds a user to Dragon
+ ╠ `/addnavigator`*:* Adds a user to Demon
+ ╠ `/addsniper`*:* Adds a user to Tiger
+ ╠ `/addmusician`*:* Adds a user to Wolf
  ╚ `Add dev doesnt exist, devs should know how to add themselves`
 
  ╔ *Ping:*
