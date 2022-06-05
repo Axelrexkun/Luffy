@@ -678,16 +678,16 @@ Commands listed here only work for users with special access and are mainly used
 Group admins/group owners do not need these commands.
 
  ╔ *List all special users:*
- ╠ `/cooks`*:* Lists all Dragon disasters
- ╠ `/navigators`*:* Lists all Demon disasters
- ╠ `/members`*:* Lists all StrawHat disasters
- ╠ `/snipers`*:* Lists all Tigers disasters
- ╠ `/musicians`*:* Lists all Wolf disasters
- ╠ `/pirates`*:* Lists all Straw Hat members
- ╠ `/addcook`*:* Adds a user to Dragon
- ╠ `/addnavigator`*:* Adds a user to Demon
- ╠ `/addsniper`*:* Adds a user to Tiger
- ╠ `/addmusician`*:* Adds a user to Wolf
+ ╠ `/cooks`*:* Lists all Cooks
+ ╠ `/navigators`*:* Lists all Navigators
+ ╠ `/members`*:* Lists all StrawHat Members
+ ╠ `/snipers`*:* Lists all Snipers
+ ╠ `/musicians`*:* Lists all Musicians
+ ╠ `/swordmans`*:* Lists all luffy dev's
+ ╠ `/addcook`*:* Promotes a user to cook
+ ╠ `/addnavigator`*:* Promotes a user to navigator
+ ╠ `/addsniper`*:* Promotes a user to Sniper
+ ╠ `/addmusician`*:* Promotes a user to musicians
  ╚ `Add dev doesnt exist, devs should know how to add themselves`
 
  ╔ *Ping:*
@@ -778,11 +778,11 @@ MEMBER_HANDLER = CommandHandler(("addmember"), addmember, run_async=True)
 UNMEMBER_HANDLER = CommandHandler(("removemember"), removemember, run_async=True)
                                    
 WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "wolves", "musician", "musician"], whitelistlist, run_async=True) 
-TIGERLIST_HANDLER = CommandHandler(["tigers", "snipers"], tigerlist, run_async=True)
-SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "demons"], supportlist, run_async=True)
+TIGERLIST_HANDLER = CommandHandler(["tigers", "snipers", "sniper"], tigerlist, run_async=True)
+SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "demons", "navigator", "navigators"], supportlist, run_async=True)
 MEMBERLIST_HANDLER = CommandHandler(["members"], memberlist, run_async=True)
-SUDOLIST_HANDLER = CommandHandler(["sudolist", "dragons"], sudolist, run_async=True)
-DEVLIST_HANDLER = CommandHandler(["devlist", "heroes"], devlist, run_async=True)
+SUDOLIST_HANDLER = CommandHandler(["sudolist", "dragons", "cook", "cooks"], sudolist, run_async=True)
+DEVLIST_HANDLER = CommandHandler(["devlist", "heroes", "swordman", "swordmans"], devlist, run_async=True)
 
 dispatcher.add_handler(SUDO_HANDLER)
 dispatcher.add_handler(SUPPORT_HANDLER)
