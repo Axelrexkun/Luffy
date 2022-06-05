@@ -163,7 +163,7 @@ def gban(update: Update, context: CallbackContext):
 
         return
 
-    message.reply_text("Bringing in God Ussop's !00 Tons Gban Hammer")
+    message.reply_text("Bringing in God Ussop's 100 Tons Gban Hammer")
 
     start_time = time.time()
     datetime_fmt = "%Y-%m-%dT%H:%M"
