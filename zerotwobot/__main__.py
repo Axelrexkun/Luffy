@@ -82,10 +82,10 @@ buttons = [
     [
         InlineKeyboardButton(
             "Support",
-            "https://t.me/NikaSupportChat"),
+            "https://t.me/genshinvoid"),
         InlineKeyboardButton(
-            "Chat Group",
-            "https://t.me/animeuniversediscusion"),
+            "Network",
+            "https://t.me/VoidxNetwork"),
 
         
     ]
@@ -94,28 +94,31 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hello there!.
-{} here. \
+Hello There Xiao Here Again.
+≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ \
+𝘎𝘢𝘮𝘦 𝘛𝘩𝘦𝘮𝘦𝘥 𝘚𝘶𝘱𝘦𝘳𝘣𝘰𝘵
+≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡                
+Main commands:
+ • /help: To Know More About Me.
+ • /start: To Check If Am Working Or Nah
 ━━━━━━━━━━━━━━━━━━━━━━━━
-𝒞𝒶𝓅𝓉𝒶𝒾𝓃 𝒪𝒻 𝒯𝒽𝑒 𝒮𝓉𝓇𝒶𝓌 𝐻𝒶𝓉 𝒫𝒾𝓇𝒶𝓉𝑒𝓈
-━━━━━━━━━━━━━━━━━━━━━━━━
-Main Commands: 
-⭒ /start: To Check If I'm Working Or Not.
-⭒ /help: To Check What Im Capable Of
-━━━━━━━━━━━━━━━━━━━━━━━━ 
-𝘈𝘯 𝘈𝘯𝘪𝘮𝘦 𝘛𝘩𝘦𝘮𝘦𝘥 𝘚𝘶𝘱𝘦𝘳𝘣𝘰𝘵.  
-━━━━━━━━━━━━━━━━━━━━━━━━ 
-Any Issues? Report at @nikasupportchat
-{}
+𝙘𝙤𝙣𝙦𝙪𝙚𝙧𝙞𝙣𝙜 𝙙𝙚𝙢𝙤𝙣𝙨 𝙞𝙨 𝙬𝙝𝙖𝙩 𝙞 𝙙𝙤.
+━━━━━━━━━━━━━━━━━━━━━━━━  
+ʀᴇᴘᴏʀᴛ ɪssᴜᴇs ᴀᴛ @ɢᴇɴsʜɪɴᴠᴏɪᴅ
+
+
 And the following:
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-ZEROTWO_IMG = "https://telegra.ph/file/a04e61cbf17a9b7495996.jpg"
+ZEROTWO_IMG = "https://telegra.ph/file/fe5b878c3298b9bc49847.jpg"
 
-DONATE_STRING = """Give Meat instead."""
+DONATE_STRING = """Heya, glad to hear you want to donate!
+ You can support the project by contacting @silver_king \
+ Supporting isnt always financial! \
+ Those who cannot provide monetary support are welcome to help us develop the bot at @voidxnetwork"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -218,21 +221,21 @@ def start(update: Update, context: CallbackContext):
             update.effective_message.reply_photo(
                 ZEROTWO_IMG,
                 caption=escape_markdown(f"""                
-                 Well Hello There {first_name}. \
-                \n I'm {context.bot.first_name} . \
-                \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ \
-                \n Fᴜᴛᴜʀᴇ Pɪʀᴀᴛᴇ Kɪɴɢ Aᴛ Yᴏᴜʀ Sᴇʀᴠɪᴄᴇ \
-                \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ \
-                \n Click /help To Check My Capabilities As The Future Pirate King \
-                \n    "𝙺𝚊𝚒𝚣𝚘𝚔𝚞 𝚘𝚞 𝚗𝚒, 𝚘𝚛𝚎 𝚠𝚊 𝚗𝚊𝚛𝚞" \
-                \n ━━━━━━━━━━━━━━━━━━━━━━━━
+                 ʜᴇʏ ᴛʜᴇʀᴇ {first_name}!. \
+                \nᴀᴍ {context.bot.first_name}, ᴀɴ ɢᴀᴍᴇ-ᴛʜᴇᴍᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ. \
+                \n ━━━━━━━━━━━━━━━━━━━━━━━━  \
+                \n 𝘊𝘰𝘯𝘲𝘶𝘦𝘳𝘰𝘳 𝘰𝘧 𝘋𝘦𝘮𝘰𝘯𝘴 \
+                \n ━━━━━━━━━━━━━━━━━━━━━━━━  \
+                \n ᴄʟɪᴄᴋ ᴏɴ /ʜᴇʟᴘ ɪғ ᴜ ᴡᴀɴᴛ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ  ᴀʙᴏᴜᴛ ᴍᴇ, ʜᴍᴘʜ. \
+                \n ᴘᴏᴡᴇʀᴇᴅ ʙʏ: ᴠᴏɪᴅ! \
+                \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
                 """),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
     else:
         update.effective_message.reply_text(
-            "Am Awake Already! Protecting this ship since:</b> <code>{}</code>".format(
+            "I'm running successfully on v{}\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 BOT_VERSION,uptime,
             ),
             parse_mode=ParseMode.HTML,
@@ -241,7 +244,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="【Support】",
-                            url="https://t.me/NikaSupportChat",
+                            url="https://t.me/genshinvoid",
                         ),
 
                     ],
@@ -572,7 +575,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True,
         )
 
-        if OWNER_ID != 1902388715 and DONATION_LINK:
+        if OWNER_ID != 1719179612 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -620,8 +623,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@NikaSupportChat", "ɪ ᴀɪɴ'ᴛ ᴏᴜᴛ ᴏғ ʜᴀᴋɪ ʏᴇᴛ!.")
-                                       
+            dispatcher.bot.sendMessage(f"@genshinvoid", "𝙸 𝙰𝙼 𝚁𝙴𝙰𝙳𝚈 𝚃𝙾 𝙲𝙾𝙽𝚀𝚄𝙴𝚁 𝙳𝙴𝙼𝙾𝙽𝚂")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isn't able to send message to support_chat, go and check!",
