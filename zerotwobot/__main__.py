@@ -96,13 +96,13 @@ buttons = [
 HELP_STRINGS = """
 Hello There Luffy Here Again.
 ━━━━━━━━━━━━━━━━━━━━━━━━ \
-𝘈𝘯 𝘈𝘯𝘪𝘮𝘦 𝘛𝘩𝘦𝘮𝘦𝘥 𝘚𝘶𝘱𝘦𝘳𝘣𝘰𝘵. 
+𝒞𝒶𝓅𝓉𝒶𝒾𝓃 𝒪𝒻 𝒯𝒽𝑒 𝒮𝓉𝓇𝒶𝓌 𝐻𝒶𝓉 𝒫𝒾𝓇𝒶𝓉𝑒𝓈
 ━━━━━━━━━━━━━━━━━━━━━━━━                
 Main commands:
- /start: To Check If I'm Working Or Not.
- /help: To Check What Im Capable Of
+⭒ /start: To Check If I'm Working Or Not.
+⭒ /help: To Check What Im Capable Of
 ━━━━━━━━━━━━━━━━━━━━━━━━
-𝒞𝒶𝓅𝓉𝒶𝒾𝓃 𝒪𝒻 𝒯𝒽𝑒 𝒮𝓉𝓇𝒶𝓌 𝐻𝒶𝓉 𝒫𝒾𝓇𝒶𝓉𝑒𝓈
+𝘈𝘯𝘪𝘮𝘦 𝘛𝘩𝘦𝘮𝘦𝘥 𝘚𝘶𝘱𝘦𝘳𝘣𝘰𝘵. 
 ━━━━━━━━━━━━━━━━━━━━━━━━  
 ʀᴇᴘᴏʀᴛ ɪssᴜᴇs ᴀᴛ @Nikasupportchat
 
@@ -115,10 +115,7 @@ And the following:
 
 ZEROTWO_IMG = "https://telegra.ph/file/a04e61cbf17a9b7495996.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @silver_king \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at @voidxnetwork"""
+DONATE_STRING = """give meat instead"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -221,29 +218,29 @@ def start(update: Update, context: CallbackContext):
             update.effective_message.reply_photo(
                 ZEROTWO_IMG,
                 caption=escape_markdown(f"""                
-                 ʜᴇʏ ᴛʜᴇʀᴇ {first_name}!. \
-                \nᴀᴍ {context.bot.first_name}, ᴀɴ ɢᴀᴍᴇ-ᴛʜᴇᴍᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ. \
+                 Well Hello There {first_name}!. \
+                \nAm {context.bot.first_name}. \
                 \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡  \
                 \n Fᴜᴛᴜʀᴇ Pɪʀᴀᴛᴇ Kɪɴɢ Aᴛ Yᴏᴜʀ Sᴇʀᴠɪᴄᴇ \
                 \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡  \
-                \n ᴄʟɪᴄᴋ ᴏɴ /help ɪғ ᴜ ᴡᴀɴᴛ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ  ᴀʙᴏᴜᴛ ᴍᴇ, ʜᴍᴘʜ. \
+                \n Click /help To Check My Capabilities As The Future Pirate King. \
                 \n ᴘᴏᴡᴇʀᴇᴅ ʙʏ: ᴠᴏɪᴅ! \
-                \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+                \n ━━━━━━━━━━━━━━━━━━━━━━━━ 
                 """),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
     else:
         update.effective_message.reply_text(
-            "Am Awake Already! Protecting this ship v{}\n<b>Haven't slept since:</b> <code>{}</code>".format(
-                BOT_VERSION,uptime,
+            "Am Awake Already! Protecting this ship since:</b> <code>{}</code>".format(
+                uptime,
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="【Support】",
+                            text="Support",
                             url="https://t.me/nikasupportchat",
                         ),
 
@@ -575,7 +572,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True,
         )
 
-        if OWNER_ID != 1719179612 and DONATION_LINK:
+        if OWNER_ID != 1902388715 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
