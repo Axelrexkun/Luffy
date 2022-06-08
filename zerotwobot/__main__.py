@@ -82,7 +82,7 @@ buttons = [
     [
         InlineKeyboardButton(
             "Support",
-            "https://t.me/genshinvoid"),
+            "https://t.me/nikasupportchat"),
         InlineKeyboardButton(
             "Network",
             "https://t.me/VoidxNetwork"),
@@ -94,17 +94,17 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hello There Xiao Here Again.
+Hello There Luffy Here Again.
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ \
-𝘎𝘢𝘮𝘦 𝘛𝘩𝘦𝘮𝘦𝘥 𝘚𝘶𝘱𝘦𝘳𝘣𝘰𝘵
+𝘈𝘯 𝘈𝘯𝘪𝘮𝘦 𝘛𝘩𝘦𝘮𝘦𝘥 𝘚𝘶𝘱𝘦𝘳𝘣𝘰𝘵. 
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡                
 Main commands:
  • /help: To Know More About Me.
  • /start: To Check If Am Working Or Nah
 ━━━━━━━━━━━━━━━━━━━━━━━━
-𝙘𝙤𝙣𝙦𝙪𝙚𝙧𝙞𝙣𝙜 𝙙𝙚𝙢𝙤𝙣𝙨 𝙞𝙨 𝙬𝙝𝙖𝙩 𝙞 𝙙𝙤.
+𝒞𝒶𝓅𝓉𝒶𝒾𝓃 𝒪𝒻 𝒯𝒽𝑒 𝒮𝓉𝓇𝒶𝓌 𝐻𝒶𝓉 𝒫𝒾𝓇𝒶𝓉𝑒𝓈
 ━━━━━━━━━━━━━━━━━━━━━━━━  
-ʀᴇᴘᴏʀᴛ ɪssᴜᴇs ᴀᴛ @ɢᴇɴsʜɪɴᴠᴏɪᴅ
+ʀᴇᴘᴏʀᴛ ɪssᴜᴇs ᴀᴛ @Nikkasupportchat
 
 
 And the following:
@@ -113,7 +113,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-ZEROTWO_IMG = "https://telegra.ph/file/fe5b878c3298b9bc49847.jpg"
+ZEROTWO_IMG = "https://telegra.ph/file/a04e61cbf17a9b7495996.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @silver_king \
@@ -223,10 +223,10 @@ def start(update: Update, context: CallbackContext):
                 caption=escape_markdown(f"""                
                  ʜᴇʏ ᴛʜᴇʀᴇ {first_name}!. \
                 \nᴀᴍ {context.bot.first_name}, ᴀɴ ɢᴀᴍᴇ-ᴛʜᴇᴍᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ. \
-                \n ━━━━━━━━━━━━━━━━━━━━━━━━  \
-                \n 𝘊𝘰𝘯𝘲𝘶𝘦𝘳𝘰𝘳 𝘰𝘧 𝘋𝘦𝘮𝘰𝘯𝘴 \
-                \n ━━━━━━━━━━━━━━━━━━━━━━━━  \
-                \n ᴄʟɪᴄᴋ ᴏɴ /ʜᴇʟᴘ ɪғ ᴜ ᴡᴀɴᴛ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ  ᴀʙᴏᴜᴛ ᴍᴇ, ʜᴍᴘʜ. \
+                \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡  \
+                \n Fᴜᴛᴜʀᴇ Pɪʀᴀᴛᴇ Kɪɴɢ Aᴛ Yᴏᴜʀ Sᴇʀᴠɪᴄᴇ \
+                \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡  \
+                \n ᴄʟɪᴄᴋ ᴏɴ /help ɪғ ᴜ ᴡᴀɴᴛ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ  ᴀʙᴏᴜᴛ ᴍᴇ, ʜᴍᴘʜ. \
                 \n ᴘᴏᴡᴇʀᴇᴅ ʙʏ: ᴠᴏɪᴅ! \
                 \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
                 """),
@@ -235,7 +235,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm running successfully on v{}\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "Am Awake Already! Protecting this ship v{}\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 BOT_VERSION,uptime,
             ),
             parse_mode=ParseMode.HTML,
@@ -244,7 +244,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="【Support】",
-                            url="https://t.me/genshinvoid",
+                            url="https://t.me/nikasupportchat",
                         ),
 
                     ],
@@ -623,7 +623,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@genshinvoid", "𝙸 𝙰𝙼 𝚁𝙴𝙰𝙳𝚈 𝚃𝙾 𝙲𝙾𝙽𝚀𝚄𝙴𝚁 𝙳𝙴𝙼𝙾𝙽𝚂")
+            dispatcher.bot.sendMessage(f"@NikaSupportChat", "ɪ ᴀɪɴ'ᴛ ᴏᴜᴛ ᴏғ ʜᴀᴋɪ ʏᴇᴛ!.")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isn't able to send message to support_chat, go and check!",
