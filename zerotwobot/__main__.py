@@ -220,12 +220,12 @@ def start(update: Update, context: CallbackContext):
                 caption=escape_markdown(f"""                
                  Well Hello There {first_name}!. \
                 \nAm {context.bot.first_name}. \
-                \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡  \
-                \n Fᴜᴛᴜʀᴇ Pɪʀᴀᴛᴇ Kɪɴɢ Aᴛ Yᴏᴜʀ Sᴇʀᴠɪᴄᴇ \
-                \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡  \
-                \n Click /help To Check My Capabilities As The Future Pirate King. \
-                \n ᴘᴏᴡᴇʀᴇᴅ ʙʏ: ᴠᴏɪᴅ! \
-                \n ━━━━━━━━━━━━━━━━━━━━━━━━ 
+                \n≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡  \
+                \nFᴜᴛᴜʀᴇ Pɪʀᴀᴛᴇ Kɪɴɢ Aᴛ Yᴏᴜʀ Sᴇʀᴠɪᴄᴇ \
+                \n≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡  \
+                \nClick /help To Check My Capabilities As The Future Pirate King. \
+                \nᴘᴏᴡᴇʀᴇᴅ ʙʏ: ᴠᴏɪᴅ! \
+                \n━━━━━━━━━━━━━━━━━━━━━━━━ 
                 """),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(buttons)
