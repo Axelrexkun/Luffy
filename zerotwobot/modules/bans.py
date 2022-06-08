@@ -119,14 +119,14 @@ def ban(update: Update, context: CallbackContext) -> str:
                 )
             elif user_id in DEMONS:
                 message.reply_text(
-                    "Bring an order From Straw Hat Crew to fight The King Of Seas.",
+                    "Bring an order From Straw Hat Crew to fight a Navigator.",
                 )
             elif user_id in TIGERS:
                 message.reply_text(
-                    "Bring an order from Straw Hat Crew to fight a Tiger disaster.",
+                    "Bring an order from Straw Hat Crew to fight a Sniper.",
                 )
             elif user_id in WOLVES:
-                message.reply_text("Wolf abilities make them ban immune!")
+                message.reply_text("Musician abilities make them ban immune!")
             else:
                 message.reply_text("This user has immunity and cannot be banned.")
             return log_message
@@ -328,7 +328,7 @@ def kick(update: Update, context: CallbackContext) -> str:
         bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         bot.sendMessage(
             chat.id,
-            f"Capitain I have kicked, {mention_html(member.user.id, html.escape(member.user.first_name))}.",
+            f"Kicked, {mention_html(member.user.id, html.escape(member.user.first_name))}.",
             parse_mode=ParseMode.HTML,
         )
         log = (
@@ -555,14 +555,14 @@ def bans_callback(update: Update, context: CallbackContext):
                     )
                 elif user_id in DEMONS:
                     message.edit_text(
-                        "Bring an order from the straw hat crew to fight the king of seas.",
+                        "Bring an order from the straw hat crew to fight the Navigator.",
                     )
                 elif user_id in TIGERS:
                     message.edit_text(
-                        "Bring an order from straw hat crew to fight a Tiger disaster.",
+                        "Bring an order from straw hat crew to fight a Sniper.",
                     )
                 elif user_id in WOLVES:
-                    message.edit_text("Wolf abilities make them ban immune!")
+                    message.edit_text("Musician abilities make them ban immune!")
                 else:
                     message.edit_text("This user has immunity and cannot be banned.")
                 return log_message
