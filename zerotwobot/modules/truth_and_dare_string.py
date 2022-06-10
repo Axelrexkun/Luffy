@@ -1,5 +1,5 @@
 TRUTH = (
-    "Have you ghosted someone?" "Have you ever walked in on your parents doing 'it'?",
+    "what are ur opinions about onepiece anime",
     "Who was the last person you liked the most? Why?",
     "Have you ever been suspended from school?",
     "If you had to choose between going naked or having your thoughts appear in thought bubbles above your head for everyone to read, which would you choose?",
@@ -16,11 +16,11 @@ TRUTH = (
     "Did u Skip the skypiea arc from one piece?",
     "After watching rent a girlfriend did u also got interest im gf booking online?",
     "Have you ever lied about your age to participate in a contest?",
-    "Have you ever been caught checking someone out?",
+    "what was ur first anime excluding pokemon,doraemon,shinchan?",
 )
 
 DARE = (
-    "Show the most embarrassing photo on your phone"
+    "send the most recent screenshot u took"
     "Show the last five people you texted and what the messages said",
     "Let the rest of the group DM someone from your Instagram account",
     "Eat a raw piece of garlic",
@@ -35,7 +35,7 @@ DARE = (
     "Like the first 15 posts on your Facebook newsfeed",
     "Eat a spoonful of mustard",
     "Keep your eyes closed until it's your go again",
-    "Send a sext to the last person in your phonebook",
+    "Send: im gay for u babe to the last person u hv texted",
     "Text @Silver_king: Why Are You Gae",
     "Seductively eat a banana",
     "Empty out your wallet/purse and show everyone what's inside",
